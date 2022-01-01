@@ -10,7 +10,6 @@ app = Flask(__name__)
 model = joblib.load("student_mark_predictor.pkl")
 
 df = pd.DataFrame()
-
 @app.route('/')
 def home():
     return render_template('index.html')
